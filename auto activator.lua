@@ -33,7 +33,7 @@ minetest.register_craft({
 		{	"default:steel_ingot",	"default:stone",				"default:steel_ingot",		},
 	}
 })
-
+if buildtest~=nil then
 buildtest.pumps.pumpible["skytest:auto_activator"] = {
 	power = function(pos, speed)
 		local meta = minetest.get_meta(pos)
@@ -93,3 +93,4 @@ buildtest.pumps.pumpible["skytest:auto_activator"] = {
 		end
 	end,
 }
+end
